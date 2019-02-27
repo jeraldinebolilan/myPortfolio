@@ -185,6 +185,13 @@ html{
 	display: inline;
 }
 
+.italic{
+	font-style: italic;
+}
+
+/*#projs {
+	display: inline;
+}*/
 
 
 /*end projects*/
@@ -215,7 +222,7 @@ html{
 					</div>
 
 					<div class="mt-5">
-						<a href="#about" class="btn btn-outline-primary btn-lg" style="font-size: 70%">Get To Know Me</a>
+						<a href="#about" class="btn btn-outline-primary btn-lg" style="font-size: 80%">Get To Know Me</a>
 					</div>
 				</div>
 			</div>
@@ -245,7 +252,7 @@ html{
                         <!-- Authentication Links -->
                         
                             <li class="nav-item">
-                                <a class="nav-link" href="#" download>Download Resume</a>
+                                <a class="nav-link" href="assets/images/jeraldinebolilan_resume.docx" download>Download Resume</a>
                             </li>
                            
                     </ul>
@@ -315,7 +322,7 @@ html{
 			<div class="row no-gutters mx-0">
 				<div class="projects-title offset-lg-1 col-lg-10">
 					<div class="mt-4 mb-3">
-						<h2 class="projects-heading font-color-heading text-center">~/My Recent Projects</h2>
+						<h2 class="text-center pl-5 ml-5" id="projs"></h2>
 					</div>
 				</div> 
 			</div>
@@ -332,7 +339,7 @@ html{
 										<a class="btn projects-btn" href="https://jeraldinebolilan.github.io/capstone1/" target="_blank">View</a>
 									</div>
 								</div>
-								<h4 class="font-color-black text-center p-2">Re-New your Smile</h4>
+								<h4 class="font-color-black text-center p-2 mt-3 italic">Re-New your Smile</h4>
 							</div>
 							<div class="col-lg-6">
 								<div class="project-holder text-center">
@@ -343,7 +350,7 @@ html{
 										<a class="btn projects-btn" href="https://littlemissk-dress4u.herokuapp.com" target="_blank">View</a>
 									</div>
 								</div>
-								<h4 class="font-color-black text-center p-2">Dress4U</h4>
+								<h4 class="font-color-black text-center p-2 mt-3 italic">Dress4U</h4>
 							</div>
 							
 
@@ -365,7 +372,7 @@ html{
 										<a class="btn projects-btn" href="https://infinite-shore-96356.herokuapp.com/" target="_blank">View</a>
 									</div>
 								</div>
-								<h4 class="font-color-black text-center p-2">betaPelikula</h4>
+								<h4 class="font-color-black text-center p-2 mt-3 italic">betaPelikula</h4>
 							</div>
 							<div class="col-lg-6">
 								<div class="project-holder text-center">
@@ -376,7 +383,7 @@ html{
 										<a class="btn projects-btn" href="https://quiet-sierra-89294.herokuapp.com/" target="_blank">View</a>
 									</div>
 								</div>
-								<h4 class="font-color-black text-center p-2">Emberr Same-Day Massage On Demand</h4>
+								<h4 class="font-color-black text-center p-2 mt-3 italic">Emberr Massage</h4>
 							</div>
 							
 
@@ -439,7 +446,7 @@ html{
 	<footer class="footer container-fluid mt-5 p-5 bg-dark">
 		<div class="row p-2 mx-0">
 			<div class="col col-md-12 text-center text-white">
-				<span>&copy;2018 Jeraldine Bolilan. </span>
+				<span><a href="" style="text-decoration: none; color: white; font-style: italic;">&copy;2018 Jeraldine Bolilan. </a></span>
 				
 			</div>
 			
@@ -459,7 +466,14 @@ html{
 						<span class="yellow">/JERALDINE</span>
 						<span class="blue">💙</span>`],
 		typeSpeed: 30
-	})
+	});
+
+	var typed = new Typed('#projs', {
+		strings: [`My Recent Projects
+						`],
+		typeSpeed: 60
+	});
+
 
 	// <span class="green"><strong>hello!</strong></span>
 	// 					<span class="pink">I'm</span> 
